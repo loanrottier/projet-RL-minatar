@@ -74,6 +74,12 @@ The MinAtar library has 6 games and the code has been tested for two of us but i
 
 The objective of this game is for the ball to reach all the white bricks at the top without falling on the ground. The ball moves diagonally. 
 
+<img width="571" height="455" alt="Image" src="https://github.com/user-attachments/assets/f0b48039-464a-425b-8306-32f71655723b" />
+There is a high variance between the episodes but the agent largely increases this result along each try. 
+
+https://github.com/user-attachments/assets/7d0efa32-e791-4050-b8eb-cd6f65c50faf
+
+https://github.com/user-attachments/assets/9332da3d-9e27-485d-9235-1bf6441e4df2
 
 
 ### Asterix
