@@ -80,6 +80,13 @@ The objective of this game is for the ball to reach all the white bricks at the 
 
 In this game, the player (represented by a square) has to avoid the rectangle moving from side to side. 
 
+<img width="571" height="455" alt="Image" src="https://github.com/user-attachments/assets/a54d24c1-5b90-481d-b9da-366e897f012b" />
+
+There is a high variance in the duration of each episode. However, the agent slowly increases his result (orange curve).
+
+https://github.com/user-attachments/assets/816a2b66-ba0e-4ee1-89c3-ac4038bd7ace
+
+https://github.com/user-attachments/assets/54050ae7-8c3c-4df3-bfb2-e307d69f51f6
 
 
 
