@@ -31,11 +31,12 @@ Source: https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning
 
 Following the previous tutorial, we construct an DQN agent able to play to different gymnasium games. 
 
+#### CartPole
+
 The first one is CartPole. The aim is to maintain the vertical bar the longer to have the most reward. The episode ends if it last more than 500 or if the bar falls or if the cart move too far away from the center (+/- 2.4 units)
 
-The following plot shows the duration of each episode. We can see that after 180 episodes the agent knows how to play and reach the maximum duration for almost all episodes. 
-
-
+The following plot shows the duration of each episode. We can see that after 180 episodes, the agent knows how to play and reach the maximum duration for almost all episodes. 
+<img width="571" height="455" alt="Image" src="https://github.com/user-attachments/assets/def92288-c3b5-40e1-82db-5bef8621757e" />
 
 The following videos show the evolution of the agent along the episodes. 
 https://github.com/user-attachments/assets/62b17825-d776-4b1d-9a26-b2dec3aefc62
@@ -48,6 +49,50 @@ https://github.com/user-attachments/assets/51efc182-4577-4eed-b586-5c077dcbf662
 
 https://github.com/user-attachments/assets/f98d5284-5f14-471d-b43f-eaef7710a09c
 
+#### Lunar Lander
+
+Here the objective is to land a rocket on the moon. The rocket has to land between the two flags without crashing. 
+<img width="580" height="455" alt="Image" src="https://github.com/user-attachments/assets/67ece79c-5b3b-4ce4-89aa-524e0c5e9685" />
+The plot shows that the results are less good than the previous games. Indeed, between the 300th and the 550th episodes, the agent succeeds in landing the rocket quite quickly before increasing the time again. The following videos illustrate some of the lander's difficulties. For example, it stays at the same position because it cannot land outside of the flags (episode 216). 
+
+https://github.com/user-attachments/assets/00ce7d65-6fa2-4564-8bcd-282c349bff75
+
+https://github.com/user-attachments/assets/377ee81e-beb7-41ed-9343-effb637962b8
+
+https://github.com/user-attachments/assets/99ce1a95-ba82-496d-8161-3464ad8a8eb3
+
+
+# Solving MinAtar games
+
+Source: https://github.com/kenjyoung/MinAtar/tree/master
+
+This section aims to adapt the code from the previous tutorial to the MinAtar games. The main difficulty was to use the old version of gymnasium called gym because the minatar library is not compatible to gymnasium.
+
+The MinAtar library has 6 games and the code has been tested for two of us but it should work for all. The hyperparameters can be optimized.
+
+### Breakout
+
+The objective of this game is for the ball to reach all the white bricks at the top without falling on the ground. The ball moves diagonally. 
+
+<img width="571" height="455" alt="Image" src="https://github.com/user-attachments/assets/f0b48039-464a-425b-8306-32f71655723b" />
+There is a high variance between the episodes but the agent largely increases this result along each try. 
+
+https://github.com/user-attachments/assets/7d0efa32-e791-4050-b8eb-cd6f65c50faf
+
+https://github.com/user-attachments/assets/9332da3d-9e27-485d-9235-1bf6441e4df2
+
+
+### Asterix
+
+In this game, the player (represented by a square) has to avoid the rectangle moving from side to side. 
+
+<img width="571" height="455" alt="Image" src="https://github.com/user-attachments/assets/a54d24c1-5b90-481d-b9da-366e897f012b" />
+
+There is a high variance in the duration of each episode. However, the agent slowly increases his result (orange curve).
+
+https://github.com/user-attachments/assets/816a2b66-ba0e-4ee1-89c3-ac4038bd7ace
+
+https://github.com/user-attachments/assets/54050ae7-8c3c-4df3-bfb2-e307d69f51f6
 
 
 
