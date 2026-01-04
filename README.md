@@ -31,11 +31,12 @@ Source: https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning
 
 Following the previous tutorial, we construct an DQN agent able to play to different gymnasium games. 
 
+#### CartPole
+
 The first one is CartPole. The aim is to maintain the vertical bar the longer to have the most reward. The episode ends if it last more than 500 or if the bar falls or if the cart move too far away from the center (+/- 2.4 units)
 
-The following plot shows the duration of each episode. We can see that after 180 episodes the agent knows how to play and reach the maximum duration for almost all episodes. 
-
-
+The following plot shows the duration of each episode. We can see that after 180 episodes, the agent knows how to play and reach the maximum duration for almost all episodes. 
+<img width="571" height="455" alt="Image" src="https://github.com/user-attachments/assets/def92288-c3b5-40e1-82db-5bef8621757e" />
 
 The following videos show the evolution of the agent along the episodes. 
 https://github.com/user-attachments/assets/62b17825-d776-4b1d-9a26-b2dec3aefc62
@@ -47,6 +48,28 @@ https://github.com/user-attachments/assets/e1bda450-4eab-46bf-a45a-8515a655739a
 https://github.com/user-attachments/assets/51efc182-4577-4eed-b586-5c077dcbf662
 
 https://github.com/user-attachments/assets/f98d5284-5f14-471d-b43f-eaef7710a09c
+
+#### Lunar Lander
+
+Here the objective is to land a rocket on the moon. The rocket has to land between the two flags without crashing. 
+
+# Solving MinAtar games
+
+Source: https://github.com/kenjyoung/MinAtar/tree/master
+
+This section aims to adapt the code from the previous tutorial to the MinAtar games. The main difficulty was to use the old version of gymnasium called gym because the minatar library is not compatible to gymnasium.
+
+The MinAtar library has 6 games and the code has been tested for two of us but it should work for all. The hyperparameters can be optimized.
+
+### Breakout
+
+The objective of this game is for the ball to reach all the white bricks at the top without falling on the ground. The ball moves diagonally. 
+
+
+
+### Asterix
+
+In this game, the player (represented by a square) has to avoid the rectangle moving from side to side. 
 
 
 
