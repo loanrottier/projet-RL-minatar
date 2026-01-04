@@ -52,6 +52,15 @@ https://github.com/user-attachments/assets/f98d5284-5f14-471d-b43f-eaef7710a09c
 #### Lunar Lander
 
 Here the objective is to land a rocket on the moon. The rocket has to land between the two flags without crashing. 
+<img width="580" height="455" alt="Image" src="https://github.com/user-attachments/assets/67ece79c-5b3b-4ce4-89aa-524e0c5e9685" />
+The plot shows that the results are less good than the previous games. Indeed, between the 300th and the 550th episodes, the agent succeeds in landing the rocket quite quickly before increasing the time again. The following videos illustrate some of the lander's difficulties. For example, it stays at the same position because it cannot land outside of the flags (episode 216). 
+
+https://github.com/user-attachments/assets/00ce7d65-6fa2-4564-8bcd-282c349bff75
+
+https://github.com/user-attachments/assets/377ee81e-beb7-41ed-9343-effb637962b8
+
+https://github.com/user-attachments/assets/99ce1a95-ba82-496d-8161-3464ad8a8eb3
+
 
 # Solving MinAtar games
 
