@@ -33,6 +33,26 @@ Following the previous tutorial, we construct an DQN agent able to play to diffe
 
 The first one is CartPole. The aim is to maintain the vertical bar the longer to have the most reward. The episode ends if it last more than 500 or if the bar falls or if the cart move too far away from the center (+/- 2.4 units)
 
-The following plot shiws the duration of each episode. We can see that after 180 episodes the agent knows how to play and reach the maximum duration for almost all episodes. 
+The following plot shows the duration of each episode. We can see that after 180 episodes the agent knows how to play and reach the maximum duration for almost all episodes. 
+
+
+
+The following videos show the evolution of the agent along the episodes. 
+https://github.com/user-attachments/assets/62b17825-d776-4b1d-9a26-b2dec3aefc62
+
+https://github.com/user-attachments/assets/7656aacf-f94c-48de-b512-5e8ecfad8c83
+
+https://github.com/user-attachments/assets/e1bda450-4eab-46bf-a45a-8515a655739a
+
+https://github.com/user-attachments/assets/51efc182-4577-4eed-b586-5c077dcbf662
+
+https://github.com/user-attachments/assets/f98d5284-5f14-471d-b43f-eaef7710a09c
+
+
+
+
+
+
+
 
 
